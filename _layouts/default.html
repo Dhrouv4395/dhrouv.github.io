@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    	<meta name="keywords" content="personal website, blog, jekyll, data science, github pages">
+        <meta name="description" content="Technical Fridays - personal website and blog">
+		<meta name="author" content="Harshit Kumar">
+        <title>{{ page.title }}</title>
+        <!--
+			HHHH        HHHH
+			HHHH        HHHH
+			HHHH        HHHH
+			HHHH        HHHH
+			HHHH        HHHH
+			HHHH        HHHH
+			HHHHHHHHHHHHHHHH
+			HHHHHHHHHHHHHHHH
+			HHHH        HHHH
+			HHHH        HHHH
+			HHHH        HHHH
+			HHHH        HHHH
+			HHHH        HHHH
+			HHHH        HHHH
+-->
+        <link rel="stylesheet" href="/css/main.css">
+        <link rel="stylesheet" href="/css/syntax.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"> -->
+
+        <link rel="apple-touch-icon" sizes="57x57" href="/img/favicon_files/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="/img/favicon_files/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="/img/favicon_files/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon_files/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="/img/favicon_files/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="/img/favicon_files/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="/img/favicon_files/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="/img/favicon_files/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon_files/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="/img/favicon_files/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon_files/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="/img/favicon_files/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon_files/favicon-16x16.png">
+        <link rel="manifest" href="/img/favicon_files/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="/img/favicon_files/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+        
+        {% if site.google_analytics and jekyll.environment == 'production' %}
+            {% include analytics.html %}
+        {% endif %}
+        {% feed_meta %}
+
+    </head>
+
+    <body>
+        
+        <label id="theme" for="themeswitch">Switch theme</label>
+        <input type="checkbox" id="themeswitch" />
+
+        <div class="theme_switch">
+            {{ content }}
+        
+        {% include dark_theme.html %}
+
+            <footer id="last_footer">
+
+                <div id="btmnav">
+                    <ul">
+                        <li><a href="{{ site.url }}">Home</a></li> -
+                        <li><a href="/about">About</a></li> -
+                        <li><a href="/projects">Projects</a></li> -
+			<li><a href="/resume">Resume</a></li> -
+                        <li><a href="/poems">Poems</a></li> -
+                        <li><a href="/blog">Blog</a></li>
+                    </ul>
+                </div>
+
+                <i class="fa fa-creative-commons" aria-hidden="true"></i>
+                Harshit Kumar {{ 'now' | date: "%Y" }} - <a href="/about_site">About this site</a>
+                <br>
+                
+                <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">
+                    <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/80x15.png" /></a>           
+            </footer>
+        </div>
+    </body>
+</html>
