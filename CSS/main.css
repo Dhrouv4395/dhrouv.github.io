@@ -1,6 +1,8 @@
+/*
 :root {
   --bg-color: #ffffff;
   --font-color: #282828; /* 424242, 3B3B3B*/
+/*
 }
 
 [data-theme="dark"] {
@@ -10,6 +12,7 @@
 
 body {
     /* font: font-style font-variant font-weight font-size/line-height font-family */
+/*
     font: 400 17px/1.6 "Helvetica Neue", Helvetica, Arial, sans-serif;
     padding: 0px;
     margin: 0px;
@@ -31,7 +34,9 @@ h6 { margin-top: 2.33em; margin-bottom: 2.33em; font-size: 0.67em; font-weight: 
 .container {
     width: 70%;
     margin: auto; /* moves everything to middle */
+/*
     overflow: hidden; /* doesn't let the children to get out */
+/*
 }
 
 #top_header {
@@ -84,15 +89,18 @@ nav {
 nav a {
     color: #ffffff;
     text-decoration: none;  /* removes underline from links */
+/*
     text-transform: uppercase;
     display: inline-block;
     list-style: none;
 	/* outline: none;  outline provides accessiblity feature */
+/*
 }
 
 nav ul {
     margin: 0px;
     padding: 0px;  /* also removes bullets from list items */
+/*
 }
 
 nav #post_algo{
@@ -103,6 +111,7 @@ nav li {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
     display: inline;
     padding: 20px; /* top right bottom left */
+/*
 }
 
 nav a:hover {
@@ -165,6 +174,7 @@ aside {
 
 #main-art a:hover, #sidebar a:hover{
     /* color: darkgray; */
+/*
     opacity: 0.75;
 }
 
@@ -183,6 +193,7 @@ article#main-art{
 }
 
 /* My projects */
+/*
 ul#myprojects li{
     margin-top: 10px;
   }
@@ -228,6 +239,7 @@ ul#myprojects li{
 
 #last_footer {
     clear: both; /* clears floating property */
+/*
     text-align: center;
     padding: 20px;
     margin-top: 20px;
@@ -261,6 +273,7 @@ iframe, object, embed, video{
 }
   
 /* Switch theme */
+/*
 
 label#theme {
     display: block;
@@ -303,7 +316,7 @@ input#themeswitch {
     vertical-align: baseline;
 }
 
-/* Categories */
+/* Categories *//*
 .tag-cloud {
     list-style: none;
     padding: 0;
@@ -346,7 +359,7 @@ input#themeswitch {
     margin-bottom: 5px;
 }
 
-/* Pagination */
+/* Pagination *//*
 .pagination a, .pagination span {
     padding: 7px 18px;
     border: 1px solid #eee;
@@ -392,7 +405,7 @@ input#themeswitch {
 		float: none;
         text-align: center;
         width: 100%;
-		word-wrap: break-word;  /* to break the link into multiple lines */
+		word-wrap: break-word;  /* to break the link into multiple lines *//*
 	}
 	article#main-art,
 	article#blog{
