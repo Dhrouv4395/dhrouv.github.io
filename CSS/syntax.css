@@ -1,4 +1,5 @@
 /** Syntax highlighting styles */
+/**
 .highlight { background: #f4f4f4; }
 .highlighter-rouge .highlight { background: #eef; }
 .highlight .c { color: #998; font-style: italic; }
@@ -60,16 +61,19 @@
 .highlight .vg { color: #008080; }
 .highlight .vi { color: #008080; }
 .highlight .il { color: #099; }
+*/
 
 /* Make line numbers unselectable: excludes line numbers from copy-paste user ops */
+/**
 .highlight .lineno {-webkit-user-select: none;-moz-user-select: none; -o-user-select: none;} 
 .lineno::-moz-selection {background-color: transparent;} /* Mozilla specific */
+/*
 .lineno::selection {background-color: transparent;} /* Other major browsers */
-
+/**
 .highlight pre {
     white-space: pre-wrap;  /* code-wrap */
 }
-
+/*
 .highlight{
   max-height: 800px;
   overflow-y: auto;
@@ -78,6 +82,8 @@
 @media(max-width: 768px) {
     .highlight{
         overflow-x: scroll;  /* for code */
+
+/*
     }
     .highlight pre {
     white-space: pre; 
@@ -88,7 +94,9 @@
 .mbtablestyle{
     border-collapse: collapse;
     /*border-spacing: 0;*/
+/*
 }
+
 
 .mbtablestyle th {
     background-color: gray;
@@ -108,17 +116,22 @@
 
 #scroll_top{
     display: none;  /* Hidden by default */
+/*
     position: fixed;
     bottom: 20px;
     right: 20px;
     z-index: 99;  /* Make sure it does not overlap */
+/*
     border: none;
     outline: none;
     color: white;
     background: rgba(0, 0, 0, 0.4);  /* a for opacity */
+/*
     cursor: pointer;  /* Add a mouse pointer on hover */
+/*
     padding: 15px;
     border-radius: 10px;  /* Rounded corners */
+/*
 }
 
 #scroll_top:hover{
@@ -148,3 +161,4 @@
   .PageNavigation .next {
     text-align: right;
   }
+*/
